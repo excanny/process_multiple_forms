@@ -1,0 +1,9 @@
+	for($i=0; $i<count($this->input->post('id')); $i++)
+			{
+				$data[]=array(
+					'budget_ID' => $this->input->post('budget_ID')[$i],
+					'name'=>$this->input->post('name')[$i],
+					'cost'=>$this->input->post('cost')[$i],
+					'description'=>$this->input->post('description')[$i],
+				);
+			}
